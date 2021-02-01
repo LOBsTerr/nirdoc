@@ -1,0 +1,63 @@
+default:
+  suites:
+    default:
+      paths:
+        - %paths.base%/tests/features
+      contexts:
+        - Drupal\DrupalExtension\Context\MarkupContext
+        - Drupal\DrupalExtension\Context\MessageContext
+        - Drupal\DrupalExtension\Context\MinkContext
+        - OpenEuropa\Site\Tests\Behat\DrupalContext
+        - OpenEuropa\Site\Tests\Behat\FeatureContext
+      filters:
+        tags: '${behat.tags}'
+  extensions:
+    Drupal\MinkExtension:
+      goutte: ~
+      ajax_timeout: 10
+      browser_name: '${selenium.browser}'
+      javascript_session: 'selenium2'
+      selenium2:
+        wd_host: '${selenium.host}:${selenium.port}/wd/hub'
+        capabilities: ${selenium.capabilities}
+      base_url: "${drupal.base_url}"
+    Drupal\DrupalExtension:
+      api_driver: "drupal"
+      drupal:
+        drupal_root: "${drupal.root}"
+      region_map:
+        page: "body"
+        header: ".ecl-site-header"
+        page header: ".ecl-page-header__body"
+        navigation: ".ecl-navigation-menu__root"
+        tabs: ".block-local-tasks-block"
+        content: ".main-content"
+        custom footer: ".ecl-footer__custom"
+        corporate top footer: ".ecl-footer__corporate-top"
+        corporate bottom footer: ".ecl-footer__corporate-bottom"
+        breadcrumb: ".ecl-breadcrumb"
+        breadcrumb segments: ".ecl-breadcrumb__segments-wrapper"
+        user menu: ".cnect-user-account-menu"
+        # TODO: check if we still need the "form item"
+        form item: "#fut-navigation-menu-add-more-wrapper"
+        navigation form: ".group-navigation-form"
+        functional link toggle: ".paragraphs-dropbutton-wrapper .dropbutton-toggle"
+      selectors:
+        message_selector: '.ecl-message'
+        error_message_selector: '.ecl-message--error'
+        success_message_selector: '.ecl-message--success'
+        warning_message_selector: '.ecl-message--warning'
+        login_form_selector: '#user-login-form'
+        logged_in_selector: '.user-logged-in'
+      text:
+        log_in: 'Log in'
+        log_out: 'Log out'
+        login_url: '/superuser/login'
+  formatters:
+    progress:
+      decorated:              true
+      verbose:                false
+      time:                   true
+      language:               en
+      output_path:            null
+      multiline_arguments:    true
