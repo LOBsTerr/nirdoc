@@ -1,0 +1,94 @@
+drupal:
+  root: "web"
+  base_url: ${env.DRUPAL_BASE_URL}
+  site:
+    profile: "standard"
+    name: "Nirdoc"
+    generate_db_url: false
+  account:
+    name: ${env.DRUPAL_ACCOUNT_USERNAME}
+    password: ${env.DRUPAL_ACCOUNT_PASSWORD}
+
+selenium:
+  host: "http://selenium"
+  port: "4444"
+  browser: "chrome"
+  capabilities: >
+    { "proxy": {"proxyType": "direct"}, "browser": "chrome", "version": "*" }
+
+environment:
+  settings:
+    trusted_host_patterns:
+      - "web$"
+      - "localhost$"
+    http_client_config:
+      proxy:
+        http: "http://username:password@host:port"
+        https: "http://username:password@host:port"
+    container_yamls:
+      - './sites/default/services.yml'
+      - './sites/development.services.yml'
+    memcache:
+      servers:
+        'memcached:11211' : 'default'
+    cache:
+      default:
+        'cache.backend.memcache'
+      bins:
+        page:
+          'cache.backend.null'
+        dynamic_page_cache:
+          'cache.backend.null'
+        render:
+          'cache.backend.null'
+  config:
+    "system.logging":
+      error_level: 'verbose'
+    "system.performance":
+      css:
+        preprocess:
+          FALSE
+      js:
+        preprocess:
+          FALSE
+    "file.settings":
+      make_unused_managed_files_temporary: TRUE
+    "views.settings":
+      ui:
+        show:
+          always_live_preview: FALSE
+          additional_queries: TRUE
+          sql_query:
+            enabled: TRUE
+            where: above
+    devel:
+      skip_translations: true
+    locale.settings:
+      translation:
+        use_source: "local"
+    swiftmailer.transport:
+      transport: smtp
+      smtp_host: mailhog
+      smtp_port: 1025
+      smtp_encryption: '0'
+      smtp_credential_provider: swiftmailer
+      smtp_credentials:
+        swiftmailer:
+          username: ''
+          password: ''
+
+toolkit:
+  build:
+    dist:
+      commands:
+        - { task: "copy", from: "lib/modules", to: "dist/${drupal.root}/modules/custom" }
+        - { task: "copy", from: "lib/themes", to: "dist/${drupal.root}/themes/custom" }
+        - { task: "copy", from: "lib/profiles", to: "dist/${drupal.root}/profiles/custom" }
+        - { task: "copy", from: "lib/drush", to: "dist/${drupal.root}/sites/all" }
+    dev:
+      commands:
+        - { task: "run", command: "drupal:setup-test" }
+
+commands:
+  drupal:setup-test:
+
