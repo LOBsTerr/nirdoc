@@ -1,8 +1,8 @@
 country:
-  default: ''
-first_day: 0
+  default: UZ
+first_day: 1
 timezone:
-  default: Europe/Brussels
+  default: Asia/Tashkent
   user:
     configurable: true
     warn: false

@@ -2,7 +2,7 @@ drupal:
   root: "web"
   base_url: ${env.DRUPAL_BASE_URL}
   site:
-    profile: "standard"
+    profile: "minimal"
     name: "Nirdoc"
     generate_db_url: false
   account:
@@ -91,4 +91,4 @@ toolkit:
 
 commands:
   drupal:setup-test:
-
+    - { task: "process", source: "behat.yml.dist", destination: "behat.yml" }
