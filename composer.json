@@ -12,6 +12,7 @@
         "drupal/admin_toolbar": "^2.4",
         "drupal/adminimal_theme": "^1.5",
         "drupal/bootstrap": "^3.23",
+        "drupal/bootstrap4": "^2.1",
         "drupal/chosen": "^2.9",
         "drupal/core": "^9.1",
         "drupal/core-composer-scaffold": "^9.1",

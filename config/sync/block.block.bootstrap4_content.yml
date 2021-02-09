@@ -1,17 +1,17 @@
-uuid: 82c7f18f-1636-4e31-b915-8902dfedc5fd
-langcode: ru
+uuid: a0c856d9-0832-491c-ac19-fb668d17eebd
+langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bootstrap
+    - bootstrap4
 _core:
-  default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
-id: bootstrap_content
-theme: bootstrap
+  default_config_hash: aJ6ps0sJm9MtQffqINgRms1JaSQgjsg68REaPdN-BGk
+id: bootstrap4_content
+theme: bootstrap4
 region: content
-weight: 0
+weight: -1
 provider: null
 plugin: system_main_block
 settings:

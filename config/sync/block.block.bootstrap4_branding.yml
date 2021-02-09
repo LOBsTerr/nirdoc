@@ -1,17 +1,17 @@
-uuid: da782cf9-f1db-497c-bc37-094c8debd077
-langcode: ru
+uuid: 9ca09b18-8f2f-4698-928c-fc5310e4a219
+langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bootstrap
+    - bootstrap4
 _core:
-  default_config_hash: Cy3vkpYrD1O5JG-BeEnokF0bByHYDEa8CBfWivB4_SQ
-id: bootstrap_branding
-theme: bootstrap
-region: navigation
-weight: 0
+  default_config_hash: 0XmTH5dbJRl-fsDBgX10MzeFMarkhKpzU7ZGdGPfAMU
+id: bootstrap4_branding
+theme: bootstrap4
+region: nav_branding
+weight: -6
 provider: null
 plugin: system_branding_block
 settings:
