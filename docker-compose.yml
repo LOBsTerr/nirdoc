@@ -7,8 +7,8 @@ services:
       - 80:80
     volumes:
       - ${PWD}:${PWD} # Non Mac users.
-      - ./resources/.htaccess:${PWD}/web/.htaccess
-      - ./resources/.htpasswd:/etc/apache2/.htpasswd
+#      - ./resources/.htaccess:${PWD}/web/.htaccess
+#      - ./resources/.htpasswd:/etc/apache2/.htpasswd
     environment:
       # ASDA CREDENTIALS
       # By leaving these variables empty Docker Compose will set them to their host values.
