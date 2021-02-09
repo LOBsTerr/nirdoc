@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.nir_contract.n_description
     - field.field.node.nir_contract.n_end_date
     - field.field.node.nir_contract.n_full_cost
+    - field.field.node.nir_contract.n_implementer
     - field.field.node.nir_contract.n_manager
     - field.field.node.nir_contract.n_number
     - field.field.node.nir_contract.n_skan
@@ -115,6 +116,16 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: number
+    region: content
+  n_implementer:
+    weight: 135
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   n_manager:
     weight: 127
