@@ -29,9 +29,26 @@
 *.sql
 /.gitattributes
 
-# Ignore testing related files
-/web/sites/simpletest
-
 # Ignore drupal core (if not versioning drupal sources)
-/web/
+/web/core
+/web/libraries
+/web/modules/contrib
+/web/profiles
+/web/sites
+/web/themes/contrib
+web/.csslintrc
+web/.eslintignore
+web/.eslintrc.json
+web/.gitignore
+web/.ht.router.php
+web/.htaccess
+web/INSTALL.txt
+web/README.txt
+web/example.gitignore
+web/index.php
+web/robots.txt
+web/themes/README.txt
+web/update.php
+web/web.config
+web/modules/README.txt
 /vendor/

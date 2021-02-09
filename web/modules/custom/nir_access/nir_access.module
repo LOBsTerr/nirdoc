@@ -1,0 +1,37 @@
+<?php
+
+use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Session\AccountInterface;
+
+/**
+ * @file
+ * General functions and hook implementations.
+ */
+
+/**
+ * Implements hook_entity_type_access().
+ */
+function nir_access_node_access(EntityInterface $entity, $operation, AccountInterface $account) {
+
+  // We allow implementers access any correspondence.
+  if ($entity->bundle() == 'nir_correspondence') {
+    $user_ids = [];
+    $contract = $entity->n_contract_number->entity;
+
+    // Give access to owners
+    if ($contract->n_manager->target_id == $account->id()) {
+      return AccessResult::allowed();
+    }
+
+    foreach ($contract->n_implementer as $implementer ) {
+      $user_ids[] = $implementer->target_id;
+    }
+
+    if (in_array($account->id(), $user_ids)) {
+      return AccessResult::allowed();
+    }
+  }
+
+  return AccessResult::forbidden();
+}

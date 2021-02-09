@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.nir_contract.n_description
     - field.field.node.nir_contract.n_end_date
     - field.field.node.nir_contract.n_full_cost
+    - field.field.node.nir_contract.n_implementer
     - field.field.node.nir_contract.n_manager
     - field.field.node.nir_contract.n_number
     - field.field.node.nir_contract.n_skan
@@ -43,6 +44,7 @@ hidden:
   n_description: true
   n_end_date: true
   n_full_cost: true
+  n_implementer: true
   n_manager: true
   n_number: true
   n_skan: true

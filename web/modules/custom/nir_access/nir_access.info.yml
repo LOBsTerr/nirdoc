@@ -1,0 +1,6 @@
+name: 'NIR access'
+type: module
+description: 'NIR access provides custom access to contract and correspondence.'
+package: NIR
+core_version_requirement: ^8 || ^9
+core: 8.x
