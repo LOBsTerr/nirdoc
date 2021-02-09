@@ -1,0 +1,23 @@
+uuid: bc16d74a-a5cb-4e38-b261-216af79a6849
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.n_full_cost
+    - node.type.nir_contract
+id: node.nir_contract.n_full_cost
+field_name: n_full_cost
+entity_type: node
+bundle: nir_contract
+label: 'Полная стоимость с НДС'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

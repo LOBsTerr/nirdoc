@@ -1,0 +1,18 @@
+uuid: 289f47b5-93c2-445a-948a-4ebedc5f9a71
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.nir_customer
+id: node.nir_customer.title
+field_name: title
+entity_type: node
+bundle: nir_customer
+label: Название
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

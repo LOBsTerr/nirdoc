@@ -3,6 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.n_family_name
+    - field.field.user.user.n_job
+    - field.field.user.user.n_name
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -23,6 +26,30 @@ content:
     region: content
   language:
     weight: 0
+    region: content
+  n_family_name:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  n_job:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  n_name:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   timezone:
     weight: 6

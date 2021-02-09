@@ -1,0 +1,23 @@
+uuid: d288af8f-5124-4e65-9259-ae06a60fde61
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.n_term
+    - node.type.nir_contract
+id: node.nir_contract.n_term
+field_name: n_term
+entity_type: node
+bundle: nir_contract
+label: 'Срок исполнения работ в днях'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

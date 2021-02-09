@@ -1,0 +1,14 @@
+uuid: 82a26b1f-1828-4355-a5c4-66f54b435911
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.nir_executor
+  module:
+    - user
+id: user_add_role_action.nir_executor
+label: 'Add the Исполнитель role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: nir_executor

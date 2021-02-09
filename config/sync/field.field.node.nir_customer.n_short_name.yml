@@ -1,0 +1,19 @@
+uuid: 9b933bc0-9bd6-4c84-958f-bf6ebc54c0a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.n_short_name
+    - node.type.nir_customer
+id: node.nir_customer.n_short_name
+field_name: n_short_name
+entity_type: node
+bundle: nir_customer
+label: 'Короткое название'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

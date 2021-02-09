@@ -1,0 +1,28 @@
+uuid: b6d04e3f-5b3b-49a6-be52-c5f5520caffe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.n_customer
+    - node.type.nir_contract
+    - node.type.nir_customer
+id: node.nir_contract.n_customer
+field_name: n_customer
+entity_type: node
+bundle: nir_contract
+label: Заказчик
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      nir_customer: nir_customer
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

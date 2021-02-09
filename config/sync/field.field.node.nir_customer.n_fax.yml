@@ -1,0 +1,21 @@
+uuid: 6bc30d55-bcd3-45d9-8fc8-db8a2ed82dfe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.n_fax
+    - node.type.nir_customer
+  module:
+    - telephone
+id: node.nir_customer.n_fax
+field_name: n_fax
+entity_type: node
+bundle: nir_customer
+label: Факс
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

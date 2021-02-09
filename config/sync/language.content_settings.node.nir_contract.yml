@@ -1,0 +1,11 @@
+uuid: 26774452-f720-456b-a685-dccae9bdaabb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.nir_contract
+id: node.nir_contract
+target_entity_type_id: node
+target_bundle: nir_contract
+default_langcode: ru
+language_alterable: false

@@ -1,0 +1,21 @@
+uuid: d0b7f3af-3aa1-4ed7-97ad-71143caf0c53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.n_end_date
+    - node.type.nir_contract
+  module:
+    - datetime
+id: node.nir_contract.n_end_date
+field_name: n_end_date
+entity_type: node
+bundle: nir_contract
+label: 'Фактическое окончание работ'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

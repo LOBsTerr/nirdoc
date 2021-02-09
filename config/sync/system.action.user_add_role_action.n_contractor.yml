@@ -1,0 +1,14 @@
+uuid: aa773a9d-8a79-45ff-8307-df964b585da1
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.n_contractor
+  module:
+    - user
+id: user_add_role_action.n_contractor
+label: 'Add the Управление договорами role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: n_contractor

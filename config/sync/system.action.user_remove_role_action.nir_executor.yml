@@ -1,0 +1,14 @@
+uuid: 1f3f6bf8-34c7-4241-87ad-b21b287cdb5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.nir_executor
+  module:
+    - user
+id: user_remove_role_action.nir_executor
+label: 'Remove the Исполнитель role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: nir_executor

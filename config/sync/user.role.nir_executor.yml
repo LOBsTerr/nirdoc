@@ -1,0 +1,9 @@
+uuid: bcbfaf1f-7e03-49e5-9062-f513109f6e14
+langcode: en
+status: true
+dependencies: {  }
+id: nir_executor
+label: Исполнитель
+weight: 4
+is_admin: null
+permissions: {  }

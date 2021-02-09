@@ -1,0 +1,20 @@
+uuid: 7e9300da-831c-4c78-880d-549fa9cc4e0b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.user.n_name
+  module:
+    - user
+id: user.user.n_name
+field_name: n_name
+entity_type: user
+bundle: user
+label: Имя
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

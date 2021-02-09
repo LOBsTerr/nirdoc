@@ -1,0 +1,27 @@
+uuid: fb5c517b-8d90-46bf-a736-5c468235690d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.n_skan
+    - node.type.nir_contract
+  module:
+    - file
+id: node.nir_contract.n_skan
+field_name: n_skan
+entity_type: node
+bundle: nir_contract
+label: 'Скан договора'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: contract/scan
+  file_extensions: 'txt jpg png pdf'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

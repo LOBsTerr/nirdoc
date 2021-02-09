@@ -1,0 +1,8 @@
+uuid: 26a6dbd8-e6ad-480b-ad0d-64538d369d9a
+langcode: ru
+status: true
+dependencies: {  }
+id: den_mesyac_god
+label: 'день, месяц, год'
+locked: false
+pattern: d-m-Y

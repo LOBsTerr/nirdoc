@@ -1,0 +1,29 @@
+uuid: a7583d52-177a-45ce-8b78-033d00d426f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.n_correspondense
+    - node.type.nir_contract
+    - node.type.nir_correspondence
+id: node.nir_contract.n_correspondense
+field_name: n_correspondense
+entity_type: node
+bundle: nir_contract
+label: 'Переписка по договору'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      nir_correspondence: nir_correspondence
+    sort:
+      field: n_date
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

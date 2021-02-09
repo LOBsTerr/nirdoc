@@ -1,0 +1,27 @@
+uuid: 0bb4f812-c7e2-4d61-96d4-b87aceb4e5f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.n_add_scan
+    - node.type.nir_contract
+  module:
+    - file
+id: node.nir_contract.n_add_scan
+field_name: n_add_scan
+entity_type: node
+bundle: nir_contract
+label: 'Дополнительное соглашение'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: scan\add_scan
+  file_extensions: 'txt pdf jpg png'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

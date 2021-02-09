@@ -1,0 +1,11 @@
+uuid: b1e7f707-0c89-4ea7-997b-c14e7510cb40
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.nir_customer
+id: node.nir_customer
+target_entity_type_id: node
+target_bundle: nir_customer
+default_langcode: ru
+language_alterable: false

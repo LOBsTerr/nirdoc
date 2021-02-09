@@ -1,0 +1,21 @@
+uuid: a4614922-37e3-47f5-bc5e-2957bf4397d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.n_data
+    - node.type.nir_contract
+  module:
+    - datetime
+id: node.nir_contract.n_data
+field_name: n_data
+entity_type: node
+bundle: nir_contract
+label: 'Дата договора'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

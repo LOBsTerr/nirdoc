@@ -1,0 +1,10 @@
+uuid: 9e5d2988-5492-498d-93e6-9a5388a0d310
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.contracts
+label: Договора
+targetEntityType: node
+cache: true

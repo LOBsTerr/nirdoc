@@ -1,0 +1,196 @@
+uuid: 45e32ff2-eaad-45d3-a80f-ab5f1ff0f783
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.nir_contract.n_add_scan
+    - field.field.node.nir_contract.n_begin_date
+    - field.field.node.nir_contract.n_comment
+    - field.field.node.nir_contract.n_correspondense
+    - field.field.node.nir_contract.n_cost
+    - field.field.node.nir_contract.n_customer
+    - field.field.node.nir_contract.n_data
+    - field.field.node.nir_contract.n_description
+    - field.field.node.nir_contract.n_end_date
+    - field.field.node.nir_contract.n_full_cost
+    - field.field.node.nir_contract.n_manager
+    - field.field.node.nir_contract.n_number
+    - field.field.node.nir_contract.n_skan
+    - field.field.node.nir_contract.n_term
+    - node.type.nir_contract
+  module:
+    - datetime
+    - file
+    - path
+    - text
+id: node.nir_contract.default
+targetEntityType: node
+bundle: nir_contract
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  n_add_scan:
+    weight: 133
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  n_begin_date:
+    weight: 128
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  n_comment:
+    weight: 131
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  n_correspondense:
+    weight: 134
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  n_cost:
+    weight: 126
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  n_customer:
+    weight: 123
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  n_data:
+    weight: 122
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  n_description:
+    weight: 124
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  n_end_date:
+    weight: 130
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  n_full_cost:
+    weight: 125
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  n_manager:
+    weight: 127
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  n_number:
+    weight: 121
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  n_skan:
+    weight: 132
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  n_term:
+    weight: 129
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+hidden: {  }

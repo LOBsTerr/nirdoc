@@ -1,0 +1,20 @@
+uuid: 3222e2af-ddb3-4bef-b550-bb3cf1c1cf3f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.user.n_job
+  module:
+    - user
+id: user.user.n_job
+field_name: n_job
+entity_type: user
+bundle: user
+label: Должность
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

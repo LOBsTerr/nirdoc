@@ -1,0 +1,18 @@
+uuid: 22ab6466-c4b1-4682-9625-2c092100da1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.nir_contract
+id: node.nir_contract.title
+field_name: title
+entity_type: node
+bundle: nir_contract
+label: Наименование
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

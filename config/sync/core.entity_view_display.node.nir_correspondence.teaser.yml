@@ -1,0 +1,35 @@
+uuid: 7c1e0c76-51fd-4024-b2f8-6551273cbd93
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.nir_correspondence.n_contract_number
+    - field.field.node.nir_correspondence.n_date
+    - field.field.node.nir_correspondence.n_description
+    - field.field.node.nir_correspondence.n_ext_number
+    - field.field.node.nir_correspondence.n_in_corr
+    - field.field.node.nir_correspondence.n_in_number
+    - field.field.node.nir_correspondence.n_skan
+    - node.type.nir_correspondence
+  module:
+    - user
+id: node.nir_correspondence.teaser
+targetEntityType: node
+bundle: nir_correspondence
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  n_contract_number: true
+  n_date: true
+  n_description: true
+  n_ext_number: true
+  n_in_corr: true
+  n_in_number: true
+  n_skan: true

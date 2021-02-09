@@ -1,0 +1,23 @@
+uuid: 137da031-affb-4827-8de0-4d303bd209e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.n_gt
+    - node.type.article
+id: node.article.n_gt
+field_name: n_gt
+entity_type: node
+bundle: article
+label: gt
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

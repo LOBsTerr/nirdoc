@@ -1,0 +1,18 @@
+uuid: 4593d27d-1c70-4a2e-8eb7-3415f91e2cfd
+langcode: en
+status: true
+dependencies: {  }
+id: n_contractor
+label: 'Управление договорами'
+weight: 3
+is_admin: null
+permissions:
+  - 'create nir_contract content'
+  - 'create nir_correspondence content'
+  - 'create nir_customer content'
+  - 'delete any nir_contract content'
+  - 'delete any nir_correspondence content'
+  - 'delete any nir_customer content'
+  - 'edit any nir_contract content'
+  - 'edit any nir_correspondence content'
+  - 'edit any nir_customer content'

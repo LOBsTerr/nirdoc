@@ -1,0 +1,19 @@
+uuid: e96031b8-5c66-458c-bfe4-7752dd78e6db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.n_addres
+    - node.type.nir_customer
+id: node.nir_customer.n_addres
+field_name: n_addres
+entity_type: node
+bundle: nir_customer
+label: Адрес
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

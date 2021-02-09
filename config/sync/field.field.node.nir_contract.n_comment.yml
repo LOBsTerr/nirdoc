@@ -1,0 +1,21 @@
+uuid: fe8e19b7-fea1-4783-abbe-467c143dd1d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.n_comment
+    - node.type.nir_contract
+  module:
+    - text
+id: node.nir_contract.n_comment
+field_name: n_comment
+entity_type: node
+bundle: nir_contract
+label: Примечания
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

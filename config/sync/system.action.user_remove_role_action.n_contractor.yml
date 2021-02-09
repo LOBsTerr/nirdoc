@@ -1,0 +1,14 @@
+uuid: 29c33afa-bfc3-48fe-a144-4c6c07fc53a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.n_contractor
+  module:
+    - user
+id: user_remove_role_action.n_contractor
+label: 'Remove the Управление договорами role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: n_contractor

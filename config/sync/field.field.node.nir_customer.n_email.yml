@@ -1,0 +1,19 @@
+uuid: 605b2b97-de8e-4dfa-ad6d-4afb5a06aba8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.n_email
+    - node.type.nir_customer
+id: node.nir_customer.n_email
+field_name: n_email
+entity_type: node
+bundle: nir_customer
+label: Email
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

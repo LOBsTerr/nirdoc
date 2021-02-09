@@ -1,0 +1,23 @@
+uuid: 7f1a3d36-965c-42ea-bbf6-2bb811e77a48
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.n_add_scan
+field_name: n_add_scan
+entity_type: node
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

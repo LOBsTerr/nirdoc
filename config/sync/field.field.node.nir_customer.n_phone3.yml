@@ -1,0 +1,21 @@
+uuid: 1dbb2615-2e4e-4802-9ec1-e3b20b55668d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.n_phone3
+    - node.type.nir_customer
+  module:
+    - telephone
+id: node.nir_customer.n_phone3
+field_name: n_phone3
+entity_type: node
+bundle: nir_customer
+label: 'Телефон 3'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

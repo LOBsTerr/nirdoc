@@ -1,0 +1,49 @@
+uuid: a889a364-0133-481c-b4d5-da01f37a6c23
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.nir_contract.n_add_scan
+    - field.field.node.nir_contract.n_begin_date
+    - field.field.node.nir_contract.n_comment
+    - field.field.node.nir_contract.n_correspondense
+    - field.field.node.nir_contract.n_cost
+    - field.field.node.nir_contract.n_customer
+    - field.field.node.nir_contract.n_data
+    - field.field.node.nir_contract.n_description
+    - field.field.node.nir_contract.n_end_date
+    - field.field.node.nir_contract.n_full_cost
+    - field.field.node.nir_contract.n_manager
+    - field.field.node.nir_contract.n_number
+    - field.field.node.nir_contract.n_skan
+    - field.field.node.nir_contract.n_term
+    - node.type.nir_contract
+  module:
+    - user
+id: node.nir_contract.teaser
+targetEntityType: node
+bundle: nir_contract
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  n_add_scan: true
+  n_begin_date: true
+  n_comment: true
+  n_correspondense: true
+  n_cost: true
+  n_customer: true
+  n_data: true
+  n_description: true
+  n_end_date: true
+  n_full_cost: true
+  n_manager: true
+  n_number: true
+  n_skan: true
+  n_term: true

@@ -1,0 +1,19 @@
+uuid: 46dc03cf-fa17-485d-8bdc-ed83347f4a21
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.n_contract_number
+field_name: n_contract_number
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

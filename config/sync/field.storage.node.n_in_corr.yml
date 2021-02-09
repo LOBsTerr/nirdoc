@@ -1,0 +1,19 @@
+uuid: f08e5012-740c-4dc9-bf7c-10dd4c42600c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.n_in_corr
+field_name: n_in_corr
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

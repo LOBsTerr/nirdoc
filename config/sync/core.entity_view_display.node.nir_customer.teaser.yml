@@ -1,0 +1,37 @@
+uuid: 332f9ea8-e0a8-4ea3-8ee6-0c9fe1a51c89
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.nir_customer.n_addres
+    - field.field.node.nir_customer.n_comment
+    - field.field.node.nir_customer.n_email
+    - field.field.node.nir_customer.n_fax
+    - field.field.node.nir_customer.n_phone1
+    - field.field.node.nir_customer.n_phone2
+    - field.field.node.nir_customer.n_phone3
+    - field.field.node.nir_customer.n_short_name
+    - node.type.nir_customer
+  module:
+    - user
+id: node.nir_customer.teaser
+targetEntityType: node
+bundle: nir_customer
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  n_addres: true
+  n_comment: true
+  n_email: true
+  n_fax: true
+  n_phone1: true
+  n_phone2: true
+  n_phone3: true
+  n_short_name: true

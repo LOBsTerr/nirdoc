@@ -1,0 +1,86 @@
+uuid: 74901638-6d25-43eb-aa3a-5da8087a5a56
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.nir_correspondence.n_contract_number
+    - field.field.node.nir_correspondence.n_date
+    - field.field.node.nir_correspondence.n_description
+    - field.field.node.nir_correspondence.n_ext_number
+    - field.field.node.nir_correspondence.n_in_corr
+    - field.field.node.nir_correspondence.n_in_number
+    - field.field.node.nir_correspondence.n_skan
+    - node.type.nir_correspondence
+  module:
+    - datetime
+    - file
+    - text
+    - user
+id: node.nir_correspondence.default
+targetEntityType: node
+bundle: nir_correspondence
+mode: default
+content:
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  n_contract_number:
+    weight: 9
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  n_date:
+    weight: 3
+    label: above
+    settings:
+      timezone_override: ''
+      date_format: d-m-Y
+    third_party_settings: {  }
+    type: datetime_custom
+    region: content
+  n_description:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  n_ext_number:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  n_in_corr:
+    weight: 6
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  n_in_number:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  n_skan:
+    weight: 7
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+hidden:
+  langcode: true

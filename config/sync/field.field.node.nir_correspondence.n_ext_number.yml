@@ -1,0 +1,19 @@
+uuid: f7f53504-b193-41d2-96d4-e969a6f38b4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.n_ext_number
+    - node.type.nir_correspondence
+id: node.nir_correspondence.n_ext_number
+field_name: n_ext_number
+entity_type: node
+bundle: nir_correspondence
+label: 'Исходящий номер'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

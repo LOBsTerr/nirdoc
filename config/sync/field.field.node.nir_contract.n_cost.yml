@@ -1,0 +1,23 @@
+uuid: 0458a584-73fa-4efd-812b-62b4bf43f1b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.n_cost
+    - node.type.nir_contract
+id: node.nir_contract.n_cost
+field_name: n_cost
+entity_type: node
+bundle: nir_contract
+label: 'Стоимость без НДС'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

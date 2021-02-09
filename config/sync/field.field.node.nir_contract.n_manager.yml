@@ -1,0 +1,30 @@
+uuid: d5582503-bc7d-401d-bad5-9295bfb1f357
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.n_manager
+    - node.type.nir_contract
+id: node.nir_contract.n_manager
+field_name: n_manager
+entity_type: node
+bundle: nir_contract
+label: 'Руководитель договора'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: role
+      role:
+        administrator: administrator
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

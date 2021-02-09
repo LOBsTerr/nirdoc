@@ -1,0 +1,18 @@
+uuid: 9c5da8f9-c469-49c5-bd68-201c19fe44a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.nir_correspondence
+id: node.nir_correspondence.title
+field_name: title
+entity_type: node
+bundle: nir_correspondence
+label: 'Тема письма'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

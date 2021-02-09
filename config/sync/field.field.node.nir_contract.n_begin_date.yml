@@ -1,0 +1,21 @@
+uuid: d671646d-df38-4758-9da4-8ef8f3f49ed0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.n_begin_date
+    - node.type.nir_contract
+  module:
+    - datetime
+id: node.nir_contract.n_begin_date
+field_name: n_begin_date
+entity_type: node
+bundle: nir_contract
+label: 'Дата поступления предоплаты (начало работ)'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
