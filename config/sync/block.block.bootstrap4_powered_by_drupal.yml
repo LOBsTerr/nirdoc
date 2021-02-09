@@ -1,17 +1,17 @@
-uuid: 4bbeca37-bd9a-4acc-bd2f-a511033699a1
-langcode: ru
+uuid: 414055a4-b4c3-4b5e-b005-cb6d53c4f6f9
+langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bootstrap
+    - bootstrap4
 _core:
-  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
-id: bootstrap_powered
-theme: bootstrap
+  default_config_hash: pCYcyBIVbwKUmraga_6Ycz5P-bhQJLJS_8HtOFpMq-o
+id: bootstrap4_powered_by_drupal
+theme: bootstrap4
 region: footer
-weight: -10
+weight: 0
 provider: null
 plugin: system_powered_by_block
 settings:
