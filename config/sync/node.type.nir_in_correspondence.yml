@@ -1,0 +1,17 @@
+uuid: 6f511a43-36c9-484b-b1ff-e9b61aaa332d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Входящая корреспонденция'
+type: nir_in_correspondence
+description: 'Входящие письма'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

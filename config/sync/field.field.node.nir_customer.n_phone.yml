@@ -1,17 +1,17 @@
-uuid: 1dbb2615-2e4e-4802-9ec1-e3b20b55668d
+uuid: ec0ad849-e2fa-4a6f-9bbd-2e416f110ede
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.n_phone3
+    - field.storage.node.n_phone
     - node.type.nir_customer
   module:
     - telephone
-id: node.nir_customer.n_phone3
-field_name: n_phone3
+id: node.nir_customer.n_phone
+field_name: n_phone
 entity_type: node
 bundle: nir_customer
-label: 'Телефон 3'
+label: Телефон
 description: ''
 required: false
 translatable: false

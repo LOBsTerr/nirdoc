@@ -1,0 +1,27 @@
+uuid: 0b1c57a9-328b-4b84-8e1b-9172c12e0e88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.n_skan
+    - node.type.nir_in_correspondence
+  module:
+    - file
+id: node.nir_in_correspondence.n_skan
+field_name: n_skan
+entity_type: node
+bundle: nir_in_correspondence
+label: 'Скан письма'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: scan/in_corr
+  file_extensions: 'txt pdf jpg png'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

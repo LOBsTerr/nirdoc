@@ -1,0 +1,69 @@
+uuid: fed2616a-fd76-424c-a139-302da46d0bf5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.nir_in_correspondence.n_date
+    - field.field.node.nir_in_correspondence.n_ext_number
+    - field.field.node.nir_in_correspondence.n_in_number
+    - field.field.node.nir_in_correspondence.n_in_register_date
+    - field.field.node.nir_in_correspondence.n_skan
+    - node.type.nir_in_correspondence
+  module:
+    - datetime
+    - file
+    - user
+id: node.nir_in_correspondence.default
+targetEntityType: node
+bundle: nir_in_correspondence
+mode: default
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  n_date:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  n_ext_number:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  n_in_number:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  n_in_register_date:
+    weight: 104
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  n_skan:
+    weight: 105
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+hidden:
+  langcode: true

@@ -7,12 +7,11 @@ dependencies:
     - field.field.node.nir_customer.n_comment
     - field.field.node.nir_customer.n_email
     - field.field.node.nir_customer.n_fax
-    - field.field.node.nir_customer.n_phone1
-    - field.field.node.nir_customer.n_phone2
-    - field.field.node.nir_customer.n_phone3
+    - field.field.node.nir_customer.n_phone
     - field.field.node.nir_customer.n_short_name
     - node.type.nir_customer
   module:
+    - telephone
     - text
     - user
 id: node.nir_customer.default
@@ -20,13 +19,8 @@ targetEntityType: node
 bundle: nir_customer
 mode: default
 content:
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   n_addres:
-    weight: 102
+    weight: 1
     label: above
     settings:
       link_to_entity: false
@@ -34,49 +28,37 @@ content:
     type: string
     region: content
   n_comment:
-    weight: 108
+    weight: 5
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   n_email:
-    weight: 107
+    weight: 4
     label: above
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   n_fax:
-    weight: 106
+    weight: 3
     label: above
-    settings: {  }
+    settings:
+      title: ''
     third_party_settings: {  }
-    type: basic_string
+    type: telephone_link
     region: content
-  n_phone1:
-    weight: 103
+  n_phone:
+    weight: 2
     label: above
-    settings: {  }
+    settings:
+      title: ''
     third_party_settings: {  }
-    type: basic_string
-    region: content
-  n_phone2:
-    weight: 104
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
-    region: content
-  n_phone3:
-    weight: 105
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
+    type: telephone_link
     region: content
   n_short_name:
-    weight: 101
+    weight: 0
     label: above
     settings:
       link_to_entity: false
@@ -85,3 +67,4 @@ content:
     region: content
 hidden:
   langcode: true
+  links: true

@@ -1,5 +1,5 @@
-b4_body_schema: ''
-b4_body_bg_schema: ''
+b4_body_schema: none
+b4_body_bg_schema: none
 b4_navbar_schema: dark
 b4_navbar_bg_schema: dark
 b4_footer_schema: dark
@@ -10,3 +10,15 @@ subtheme_name: ''
 subtheme_machine_name: ''
 _core:
   default_config_hash: KSNPviNI7ZQYoUp7GU-1xLaUDIGxJk-LTrhGAE0QJ8A
+features:
+  node_user_picture: 1
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+logo:
+  use_default: 0
+  path: 'public://logo uzliti 2018.png'
+favicon:
+  use_default: 0
+  path: 'public://favicon.ico'
+  mimetype: image/vnd.microsoft.icon

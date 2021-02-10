@@ -1,0 +1,19 @@
+uuid: 7196c00f-56f5-4b27-af70-e5f366ade7f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.n_in_number
+    - node.type.nir_in_correspondence
+id: node.nir_in_correspondence.n_in_number
+field_name: n_in_number
+entity_type: node
+bundle: nir_in_correspondence
+label: 'Входящий номер'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

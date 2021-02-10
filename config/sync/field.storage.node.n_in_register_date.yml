@@ -1,16 +1,17 @@
-uuid: 68689b98-4807-43f3-8e0e-b71c7a47efd3
+uuid: 518ab0e4-d526-4a94-8d84-baf130eae84c
 langcode: en
 status: true
 dependencies:
   module:
+    - datetime
     - node
-    - telephone
-id: node.n_phone1
-field_name: n_phone1
+id: node.n_in_register_date
+field_name: n_in_register_date
 entity_type: node
-type: telephone
-settings: {  }
-module: telephone
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
 locked: false
 cardinality: 1
 translatable: true

@@ -1,0 +1,21 @@
+uuid: 8a694731-f34d-41d1-8b03-f5c57254f35a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.n_in_register_date
+    - node.type.nir_in_correspondence
+  module:
+    - datetime
+id: node.nir_in_correspondence.n_in_register_date
+field_name: n_in_register_date
+entity_type: node
+bundle: nir_in_correspondence
+label: 'Дата регистрации'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

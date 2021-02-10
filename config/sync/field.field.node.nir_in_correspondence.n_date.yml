@@ -1,0 +1,21 @@
+uuid: 5c54f1b0-63de-4f20-b536-19ddc583fdf0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.n_date
+    - node.type.nir_in_correspondence
+  module:
+    - datetime
+id: node.nir_in_correspondence.n_date
+field_name: n_date
+entity_type: node
+bundle: nir_in_correspondence
+label: 'Дата письма'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

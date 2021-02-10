@@ -7,13 +7,10 @@ dependencies:
     - field.field.node.nir_customer.n_comment
     - field.field.node.nir_customer.n_email
     - field.field.node.nir_customer.n_fax
-    - field.field.node.nir_customer.n_phone1
-    - field.field.node.nir_customer.n_phone2
-    - field.field.node.nir_customer.n_phone3
+    - field.field.node.nir_customer.n_phone
     - field.field.node.nir_customer.n_short_name
     - node.type.nir_customer
   module:
-    - path
     - telephone
     - text
 id: node.nir_customer.default
@@ -21,21 +18,8 @@ targetEntityType: node
 bundle: nir_customer
 mode: default
 content:
-  created:
-    type: datetime_timestamp
-    weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  langcode:
-    type: language_select
-    weight: 2
-    region: content
-    settings:
-      include_locked: true
-    third_party_settings: {  }
   n_addres:
-    weight: 122
+    weight: 2
     settings:
       size: 60
       placeholder: ''
@@ -43,7 +27,7 @@ content:
     type: string_textfield
     region: content
   n_comment:
-    weight: 128
+    weight: 6
     settings:
       rows: 5
       placeholder: ''
@@ -51,7 +35,7 @@ content:
     type: text_textarea
     region: content
   n_email:
-    weight: 127
+    weight: 5
     settings:
       size: 60
       placeholder: ''
@@ -59,84 +43,40 @@ content:
     type: email_default
     region: content
   n_fax:
-    weight: 126
+    weight: 4
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
     region: content
-  n_phone1:
-    weight: 123
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-    type: telephone_default
-    region: content
-  n_phone2:
-    weight: 124
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-    type: telephone_default
-    region: content
-  n_phone3:
-    weight: 125
+  n_phone:
+    weight: 3
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: telephone_default
     region: content
   n_short_name:
-    weight: 121
+    weight: 1
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
     region: content
-  path:
-    type: path
-    weight: 30
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 15
-    region: content
-    third_party_settings: {  }
-  status:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 120
-    region: content
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 16
-    region: content
-    third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 5
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-      match_limit: 10
-    region: content
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  created: true
+  langcode: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true
