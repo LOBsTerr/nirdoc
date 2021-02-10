@@ -13,7 +13,6 @@ dependencies:
     - field.field.node.nir_contract.n_description
     - field.field.node.nir_contract.n_end_date
     - field.field.node.nir_contract.n_full_cost
-    - field.field.node.nir_contract.n_implementer
     - field.field.node.nir_contract.n_manager
     - field.field.node.nir_contract.n_number
     - field.field.node.nir_contract.n_skan
@@ -120,14 +119,6 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_decimal
-    region: content
-  n_implementer:
-    weight: 115
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
     region: content
   n_manager:
     weight: 107

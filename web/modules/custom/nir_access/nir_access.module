@@ -19,13 +19,8 @@ function nir_access_node_access(EntityInterface $entity, $operation, AccountInte
     $user_ids = [];
     $contract = $entity->n_contract_number->entity;
 
-    // Give access to owners
-    if ($contract->n_manager->target_id == $account->id()) {
-      return AccessResult::allowed();
-    }
-
-    foreach ($contract->n_implementer as $implementer ) {
-      $user_ids[] = $implementer->target_id;
+    foreach ($contract->n_manager as $manager ) {
+      $user_ids[] = $manager->target_id;
     }
 
     if (in_array($account->id(), $user_ids)) {
