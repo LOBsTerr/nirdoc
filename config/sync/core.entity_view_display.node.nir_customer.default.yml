@@ -28,12 +28,12 @@ content:
     type: string
     region: content
   n_comment:
+    type: text_default
     weight: 5
+    region: content
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
-    region: content
   n_email:
     weight: 4
     label: above

@@ -87,7 +87,7 @@ content:
   n_description:
     weight: 124
     settings:
-      size: 60
+      size: 255
       placeholder: ''
     third_party_settings: {  }
     type: text_textfield

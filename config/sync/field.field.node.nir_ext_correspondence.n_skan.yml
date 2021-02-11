@@ -1,16 +1,16 @@
-uuid: ddeced97-fb75-4dce-b65f-15cc924db20d
+uuid: 9a635672-563c-4d65-8dae-aca6c8b5b319
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.n_skan
-    - node.type.iskhodyaschaya_korrespondenciya
+    - node.type.nir_ext_correspondence
   module:
     - file
-id: node.iskhodyaschaya_korrespondenciya.n_skan
+id: node.nir_ext_correspondence.n_skan
 field_name: n_skan
 entity_type: node
-bundle: iskhodyaschaya_korrespondenciya
+bundle: nir_ext_correspondence
 label: 'Скан письма'
 description: ''
 required: true

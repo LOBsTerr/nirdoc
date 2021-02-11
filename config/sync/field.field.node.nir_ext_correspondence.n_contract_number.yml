@@ -1,18 +1,18 @@
-uuid: dee94dde-adad-485d-b55c-280e5ab5d9af
+uuid: 9e7a0dce-1ed5-4df2-a17c-b2a6d62380d1
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.n_contract_number
-    - node.type.iskhodyaschaya_korrespondenciya
     - node.type.nir_contract
-id: node.iskhodyaschaya_korrespondenciya.n_contract_number
+    - node.type.nir_ext_correspondence
+id: node.nir_ext_correspondence.n_contract_number
 field_name: n_contract_number
 entity_type: node
-bundle: iskhodyaschaya_korrespondenciya
+bundle: nir_ext_correspondence
 label: 'По какому договору письмо'
 description: ''
-required: false
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''
@@ -22,7 +22,7 @@ settings:
     target_bundles:
       nir_contract: nir_contract
     sort:
-      field: n_number
+      field: n_data
       direction: ASC
     auto_create: false
     auto_create_bundle: ''

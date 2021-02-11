@@ -1,8 +1,9 @@
-uuid: fed2616a-fd76-424c-a139-302da46d0bf5
+uuid: 60fbe1cc-6a3d-45b8-896c-6180faa3456b
 langcode: en
-status: true
+status: false
 dependencies:
   config:
+    - core.entity_view_mode.node.search_result
     - field.field.node.nir_in_correspondence.n_contract_number
     - field.field.node.nir_in_correspondence.n_customer
     - field.field.node.nir_in_correspondence.n_date
@@ -16,10 +17,10 @@ dependencies:
     - datetime
     - file
     - user
-id: node.nir_in_correspondence.default
+id: node.nir_in_correspondence.search_result
 targetEntityType: node
 bundle: nir_in_correspondence
-mode: default
+mode: search_result
 content:
   n_contract_number:
     weight: 4
@@ -71,14 +72,15 @@ content:
     type: string
     region: content
   n_in_register_date:
-    type: datetime_default
     weight: 3
-    region: content
     label: above
     settings:
-      timezone_override: ''
-      format_type: den_mesyac_god
+      future_format: '@interval hence'
+      past_format: '@interval ago'
+      granularity: 2
     third_party_settings: {  }
+    type: datetime_time_ago
+    region: content
   n_skan:
     weight: 5
     label: above

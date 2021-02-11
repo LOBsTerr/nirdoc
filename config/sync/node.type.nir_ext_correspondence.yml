@@ -1,4 +1,4 @@
-uuid: 2a8bd0a1-57d3-4757-b72c-4287f3f34998
+uuid: 991c9fc4-265b-47a2-94d6-084e8d5ec123
 langcode: en
 status: true
 dependencies:
@@ -10,8 +10,8 @@ third_party_settings:
       - main
     parent: 'main:'
 name: 'Исходящая корреспонденция'
-type: iskhodyaschaya_korrespondenciya
-description: ''
+type: nir_ext_correspondence
+description: 'Исходящие письма'
 help: ''
 new_revision: true
 preview_mode: 1

@@ -4,8 +4,11 @@ status: true
 dependencies:
   config:
     - page_manager.page.home_page
+    - views.view.nir_contracts
   module:
     - panels
+    - search
+    - views
 id: home_page-panels_variant-0
 label: Panels
 variant: panels_variant
@@ -17,16 +20,36 @@ variant_settings:
       provider: core
       label_display: '0'
       region: top
-      weight: 0
+      weight: -1
       uuid: fbe8c149-28f5-40a3-935c-31ee39e10eda
+      context_mapping: {  }
+    db9d79eb-8bff-4021-8ade-d19ce1272d23:
+      id: search_form_block
+      label: Поиск
+      provider: search
+      label_display: visible
+      page_id: ''
+      region: top
+      weight: 0
+      uuid: db9d79eb-8bff-4021-8ade-d19ce1272d23
+      context_mapping: {  }
+    8235583e-30e6-423a-9504-7d3c9fa339eb:
+      id: 'views_block:nir_contracts-block_1'
+      label: ''
+      provider: views
+      label_display: visible
+      views_label: ''
+      items_per_page: none
+      region: top
+      weight: 1
+      uuid: 8235583e-30e6-423a-9504-7d3c9fa339eb
       context_mapping: {  }
   id: panels_variant
   uuid: 9da7d2e6-60d1-4795-bc61-2c5d8e2f9904
   label: null
   weight: 0
   layout: layout_twocol
-  layout_settings:
-    label: Homepage
+  layout_settings: {  }
   page_title: 'Главная страница'
   storage_type: page_manager
   storage_id: home_page-panels_variant-0

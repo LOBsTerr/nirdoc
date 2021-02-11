@@ -1,13 +1,13 @@
-uuid: f0081042-88e9-4098-bac6-feaf14cfb6cb
+uuid: 55f92d3c-0a5c-417a-8beb-3f80acf5fa36
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.iskhodyaschaya_korrespondenciya
-id: node.iskhodyaschaya_korrespondenciya.title
+    - node.type.nir_ext_correspondence
+id: node.nir_ext_correspondence.title
 field_name: title
 entity_type: node
-bundle: iskhodyaschaya_korrespondenciya
+bundle: nir_ext_correspondence
 label: 'Тема письма'
 description: ''
 required: true

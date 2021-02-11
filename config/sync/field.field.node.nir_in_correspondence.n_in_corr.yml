@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.storage.node.n_in_corr
-    - node.type.iskhodyaschaya_korrespondenciya
     - node.type.nir_in_correspondence
 id: node.nir_in_correspondence.n_in_corr
 field_name: n_in_corr
@@ -19,8 +18,7 @@ default_value_callback: ''
 settings:
   handler: 'default:node'
   handler_settings:
-    target_bundles:
-      iskhodyaschaya_korrespondenciya: iskhodyaschaya_korrespondenciya
+    target_bundles: {  }
     sort:
       field: n_date
       direction: ASC

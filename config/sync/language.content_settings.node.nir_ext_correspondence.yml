@@ -1,0 +1,11 @@
+uuid: f943c6a2-900d-440f-a2c3-b61fdf3e1d34
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.nir_ext_correspondence
+id: node.nir_ext_correspondence
+target_entity_type_id: node
+target_bundle: nir_ext_correspondence
+default_langcode: site_default
+language_alterable: false

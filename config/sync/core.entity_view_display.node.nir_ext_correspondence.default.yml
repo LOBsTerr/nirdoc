@@ -1,31 +1,26 @@
-uuid: 96dad6af-be9a-47a7-9b6a-e3bcb4f7a265
+uuid: 1e034187-0748-4f09-921d-0d881d284616
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.iskhodyaschaya_korrespondenciya.n_contract_number
-    - field.field.node.iskhodyaschaya_korrespondenciya.n_customer
-    - field.field.node.iskhodyaschaya_korrespondenciya.n_date
-    - field.field.node.iskhodyaschaya_korrespondenciya.n_ext_number
-    - field.field.node.iskhodyaschaya_korrespondenciya.n_in_corr
-    - field.field.node.iskhodyaschaya_korrespondenciya.n_skan
-    - node.type.iskhodyaschaya_korrespondenciya
+    - field.field.node.nir_ext_correspondence.n_contract_number
+    - field.field.node.nir_ext_correspondence.n_customer
+    - field.field.node.nir_ext_correspondence.n_date
+    - field.field.node.nir_ext_correspondence.n_ext_number
+    - field.field.node.nir_ext_correspondence.n_in_corr
+    - field.field.node.nir_ext_correspondence.n_skan
+    - node.type.nir_ext_correspondence
   module:
     - datetime
     - file
     - user
-id: node.iskhodyaschaya_korrespondenciya.default
+id: node.nir_ext_correspondence.default
 targetEntityType: node
-bundle: iskhodyaschaya_korrespondenciya
+bundle: nir_ext_correspondence
 mode: default
 content:
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   n_contract_number:
-    weight: 106
+    weight: 5
     label: above
     settings:
       link: true
@@ -33,7 +28,7 @@ content:
     type: entity_reference_label
     region: content
   n_customer:
-    weight: 103
+    weight: 3
     label: above
     settings:
       link: true
@@ -41,16 +36,16 @@ content:
     type: entity_reference_label
     region: content
   n_date:
-    weight: 102
+    weight: 1
     label: above
     settings:
-      format_type: medium
       timezone_override: ''
+      format_type: den_mesyac_god
     third_party_settings: {  }
     type: datetime_default
     region: content
   n_ext_number:
-    weight: 101
+    weight: 0
     label: above
     settings:
       link_to_entity: false
@@ -58,7 +53,7 @@ content:
     type: string
     region: content
   n_in_corr:
-    weight: 105
+    weight: 2
     label: above
     settings:
       link: true
@@ -66,7 +61,7 @@ content:
     type: entity_reference_label
     region: content
   n_skan:
-    weight: 104
+    weight: 4
     label: above
     settings:
       use_description_as_link_text: true
@@ -75,3 +70,4 @@ content:
     region: content
 hidden:
   langcode: true
+  links: true

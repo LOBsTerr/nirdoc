@@ -1,14 +1,14 @@
-uuid: 01e9ca38-f65c-403e-bbdb-38a56dbde74c
+uuid: 0e14db49-7f88-490e-afa5-15ea787d3113
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.n_ext_number
-    - node.type.iskhodyaschaya_korrespondenciya
-id: node.iskhodyaschaya_korrespondenciya.n_ext_number
+    - node.type.nir_ext_correspondence
+id: node.nir_ext_correspondence.n_ext_number
 field_name: n_ext_number
 entity_type: node
-bundle: iskhodyaschaya_korrespondenciya
+bundle: nir_ext_correspondence
 label: 'Номер письма'
 description: ''
 required: true

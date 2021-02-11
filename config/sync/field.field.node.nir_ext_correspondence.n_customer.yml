@@ -1,15 +1,15 @@
-uuid: dedd80b6-99d0-40f6-9fdf-2888e1a397a3
+uuid: 1aa039b7-0e12-454d-9438-1ed15b90c89f
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.n_customer
-    - node.type.iskhodyaschaya_korrespondenciya
     - node.type.nir_customer
-id: node.iskhodyaschaya_korrespondenciya.n_customer
+    - node.type.nir_ext_correspondence
+id: node.nir_ext_correspondence.n_customer
 field_name: n_customer
 entity_type: node
-bundle: iskhodyaschaya_korrespondenciya
+bundle: nir_ext_correspondence
 label: Заказчик
 description: ''
 required: true
@@ -22,8 +22,7 @@ settings:
     target_bundles:
       nir_customer: nir_customer
     sort:
-      field: title
-      direction: ASC
+      field: _none
     auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference
