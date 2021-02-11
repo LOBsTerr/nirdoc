@@ -3,8 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.nir_in_correspondence.n_contract_number
+    - field.field.node.nir_in_correspondence.n_customer
     - field.field.node.nir_in_correspondence.n_date
     - field.field.node.nir_in_correspondence.n_ext_number
+    - field.field.node.nir_in_correspondence.n_in_corr
     - field.field.node.nir_in_correspondence.n_in_number
     - field.field.node.nir_in_correspondence.n_in_register_date
     - field.field.node.nir_in_correspondence.n_skan
@@ -23,6 +26,22 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  n_contract_number:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  n_customer:
+    weight: 107
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   n_date:
     weight: 102
     label: above
@@ -39,6 +58,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  n_in_corr:
+    weight: 108
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   n_in_number:
     weight: 101

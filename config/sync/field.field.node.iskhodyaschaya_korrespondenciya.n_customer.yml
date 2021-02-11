@@ -1,0 +1,29 @@
+uuid: dedd80b6-99d0-40f6-9fdf-2888e1a397a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.n_customer
+    - node.type.iskhodyaschaya_korrespondenciya
+    - node.type.nir_customer
+id: node.iskhodyaschaya_korrespondenciya.n_customer
+field_name: n_customer
+entity_type: node
+bundle: iskhodyaschaya_korrespondenciya
+label: Заказчик
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      nir_customer: nir_customer
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

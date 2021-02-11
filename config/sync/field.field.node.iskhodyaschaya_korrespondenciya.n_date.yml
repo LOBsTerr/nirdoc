@@ -1,16 +1,16 @@
-uuid: 4f188074-d712-4a2d-8652-9d296af0f7ba
+uuid: dd0be67f-6ee1-495a-b667-6f08c71aceb3
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.n_date
-    - node.type.nir_correspondence
+    - node.type.iskhodyaschaya_korrespondenciya
   module:
     - datetime
-id: node.nir_correspondence.n_date
+id: node.iskhodyaschaya_korrespondenciya.n_date
 field_name: n_date
 entity_type: node
-bundle: nir_correspondence
+bundle: iskhodyaschaya_korrespondenciya
 label: 'Дата письма'
 description: ''
 required: true

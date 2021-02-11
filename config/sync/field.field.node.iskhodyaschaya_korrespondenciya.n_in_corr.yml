@@ -1,0 +1,29 @@
+uuid: bfc8dd47-a529-4d5b-8191-0f2f6279fcd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.n_in_corr
+    - node.type.iskhodyaschaya_korrespondenciya
+    - node.type.nir_in_correspondence
+id: node.iskhodyaschaya_korrespondenciya.n_in_corr
+field_name: n_in_corr
+entity_type: node
+bundle: iskhodyaschaya_korrespondenciya
+label: 'Ответ на'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      nir_in_correspondence: nir_in_correspondence
+    sort:
+      field: n_date
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

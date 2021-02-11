@@ -1,0 +1,29 @@
+uuid: dee94dde-adad-485d-b55c-280e5ab5d9af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.n_contract_number
+    - node.type.iskhodyaschaya_korrespondenciya
+    - node.type.nir_contract
+id: node.iskhodyaschaya_korrespondenciya.n_contract_number
+field_name: n_contract_number
+entity_type: node
+bundle: iskhodyaschaya_korrespondenciya
+label: 'По какому договору письмо'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      nir_contract: nir_contract
+    sort:
+      field: n_number
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

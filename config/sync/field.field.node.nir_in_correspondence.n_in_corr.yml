@@ -1,14 +1,15 @@
-uuid: d82129eb-48cb-48e8-9b73-5ba80623dd70
+uuid: 8082b09a-2f3a-47eb-be58-714c5327469a
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.n_in_corr
-    - node.type.nir_correspondence
-id: node.nir_correspondence.n_in_corr
+    - node.type.iskhodyaschaya_korrespondenciya
+    - node.type.nir_in_correspondence
+id: node.nir_in_correspondence.n_in_corr
 field_name: n_in_corr
 entity_type: node
-bundle: nir_correspondence
+bundle: nir_in_correspondence
 label: 'Ответ на'
 description: ''
 required: false
@@ -19,10 +20,10 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      nir_correspondence: nir_correspondence
+      iskhodyaschaya_korrespondenciya: iskhodyaschaya_korrespondenciya
     sort:
       field: n_date
       direction: ASC
     auto_create: false
-    auto_create_bundle: nir_customer
+    auto_create_bundle: ''
 field_type: entity_reference

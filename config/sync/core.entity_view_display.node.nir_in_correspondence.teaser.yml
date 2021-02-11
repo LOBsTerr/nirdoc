@@ -4,8 +4,11 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.nir_in_correspondence.n_contract_number
+    - field.field.node.nir_in_correspondence.n_customer
     - field.field.node.nir_in_correspondence.n_date
     - field.field.node.nir_in_correspondence.n_ext_number
+    - field.field.node.nir_in_correspondence.n_in_corr
     - field.field.node.nir_in_correspondence.n_in_number
     - field.field.node.nir_in_correspondence.n_in_register_date
     - field.field.node.nir_in_correspondence.n_skan
@@ -24,8 +27,11 @@ content:
     region: content
 hidden:
   langcode: true
+  n_contract_number: true
+  n_customer: true
   n_date: true
   n_ext_number: true
+  n_in_corr: true
   n_in_number: true
   n_in_register_date: true
   n_skan: true

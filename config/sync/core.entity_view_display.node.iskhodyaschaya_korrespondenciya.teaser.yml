@@ -1,0 +1,33 @@
+uuid: 3aa8a6b0-4469-471b-a546-c696f2d3d05d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.iskhodyaschaya_korrespondenciya.n_contract_number
+    - field.field.node.iskhodyaschaya_korrespondenciya.n_customer
+    - field.field.node.iskhodyaschaya_korrespondenciya.n_date
+    - field.field.node.iskhodyaschaya_korrespondenciya.n_ext_number
+    - field.field.node.iskhodyaschaya_korrespondenciya.n_in_corr
+    - field.field.node.iskhodyaschaya_korrespondenciya.n_skan
+    - node.type.iskhodyaschaya_korrespondenciya
+  module:
+    - user
+id: node.iskhodyaschaya_korrespondenciya.teaser
+targetEntityType: node
+bundle: iskhodyaschaya_korrespondenciya
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  n_contract_number: true
+  n_customer: true
+  n_date: true
+  n_ext_number: true
+  n_in_corr: true
+  n_skan: true

@@ -1,19 +1,19 @@
-uuid: de75824a-7fce-4c2f-90da-9c505315ea03
+uuid: bdcc2ce1-e25d-4465-97bc-7bc28db8cf87
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.n_contract_number
     - node.type.nir_contract
-    - node.type.nir_correspondence
-id: node.nir_correspondence.n_contract_number
+    - node.type.nir_in_correspondence
+id: node.nir_in_correspondence.n_contract_number
 field_name: n_contract_number
 entity_type: node
-bundle: nir_correspondence
+bundle: nir_in_correspondence
 label: 'По какому договору письмо'
 description: ''
-required: false
-translatable: false
+required: true
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

@@ -22,7 +22,9 @@ settings:
     filter:
       type: role
       role:
-        administrator: administrator
+        nir_executor: nir_executor
+        administrator: '0'
+        n_contractor: '0'
     target_bundles: null
     sort:
       field: _none

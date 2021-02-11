@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.nir_contract.n_add_scan
     - field.field.node.nir_contract.n_begin_date
     - field.field.node.nir_contract.n_comment
-    - field.field.node.nir_contract.n_correspondense
     - field.field.node.nir_contract.n_cost
     - field.field.node.nir_contract.n_customer
     - field.field.node.nir_contract.n_data
@@ -56,14 +55,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
-  n_correspondense:
-    weight: 114
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
     region: content
   n_cost:
     weight: 106

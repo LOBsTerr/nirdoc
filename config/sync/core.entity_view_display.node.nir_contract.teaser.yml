@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.nir_contract.n_add_scan
     - field.field.node.nir_contract.n_begin_date
     - field.field.node.nir_contract.n_comment
-    - field.field.node.nir_contract.n_correspondense
     - field.field.node.nir_contract.n_cost
     - field.field.node.nir_contract.n_customer
     - field.field.node.nir_contract.n_data
@@ -36,7 +35,6 @@ hidden:
   n_add_scan: true
   n_begin_date: true
   n_comment: true
-  n_correspondense: true
   n_cost: true
   n_customer: true
   n_data: true

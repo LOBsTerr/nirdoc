@@ -1,24 +1,22 @@
-uuid: 3cf8ac1c-8db1-4c06-bacd-031822f555f2
+uuid: f4b5ba64-56ee-4d72-9054-1a6673bf05de
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.nir_correspondence.n_contract_number
-    - field.field.node.nir_correspondence.n_date
-    - field.field.node.nir_correspondence.n_description
-    - field.field.node.nir_correspondence.n_ext_number
-    - field.field.node.nir_correspondence.n_in_corr
-    - field.field.node.nir_correspondence.n_in_number
-    - field.field.node.nir_correspondence.n_skan
-    - node.type.nir_correspondence
+    - field.field.node.nir_in_correspondence.n_contract_number
+    - field.field.node.nir_in_correspondence.n_customer
+    - field.field.node.nir_in_correspondence.n_date
+    - field.field.node.nir_in_correspondence.n_ext_number
+    - field.field.node.nir_in_correspondence.n_in_corr
+    - field.field.node.nir_in_correspondence.n_in_number
+    - field.field.node.nir_in_correspondence.n_in_register_date
+    - field.field.node.nir_in_correspondence.n_skan
+    - node.type.nir_in_correspondence
   module:
-    - datetime
-    - file
     - path
-    - text
-id: node.nir_correspondence.default
+id: node.nir_in_correspondence.default
 targetEntityType: node
-bundle: nir_correspondence
+bundle: nir_in_correspondence
 mode: default
 content:
   created:
@@ -29,13 +27,13 @@ content:
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 8
+    weight: 2
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   n_contract_number:
-    weight: 27
+    weight: 121
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -44,30 +42,18 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  n_date:
-    weight: 2
-    settings: {  }
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
-  n_description:
-    weight: 26
+  n_customer:
+    weight: 122
     settings:
+      match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: text_textfield
-    region: content
-  n_ext_number:
-    weight: 1
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
+    type: entity_reference_autocomplete
     region: content
   n_in_corr:
-    weight: 6
+    weight: 123
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -75,25 +61,10 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
-    region: content
-  n_in_number:
-    weight: 3
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  n_skan:
-    weight: 7
-    settings:
-      progress_indicator: throbber
-    third_party_settings: {  }
-    type: file_generic
     region: content
   path:
     type: path
-    weight: 13
+    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -101,26 +72,26 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
+    weight: 15
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 14
+    weight: 120
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 12
+    weight: 16
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: -5
     region: content
     settings:
       size: 60
@@ -128,7 +99,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 9
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 60
@@ -136,4 +107,9 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  n_date: true
+  n_ext_number: true
+  n_in_number: true
+  n_in_register_date: true
+  n_skan: true
