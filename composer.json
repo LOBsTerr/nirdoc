@@ -21,7 +21,8 @@
         "drupal/panels": "^4.6",
         "drush/drush": "^10.0",
         "ec-europa/toolkit": "^4.4.3",
-        "harvesthq/chosen": "^1.8"
+        "harvesthq/chosen": "^1.8",
+	"vlucas/phpdotenv": "^4.0"
     },
     "require-dev": {
         "drupal/config_devel": "^1.7",
@@ -58,6 +59,9 @@
     "prefer-stable": true,
     "config": {
         "sort-packages": true
+    },
+    "autoload": {
+        "files": ["load.environment.php"]
     },
     "extra": {
         "drupal-scaffold": {
